@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Confirm New Tab</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('a').click(function(event) {                
+                if ($(this).attr('target') === '_blank') {                   
+                    var confirmMessage = "You are about to open a new tab. Continue?";
+                    if (!confirm(confirmMessage)) {
+                        event.preventDefault();
+                    }
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="https://newbinusmaya.binus.ac.id/lms/dashboard" target="_blank">
+                <img src="Binus University Logo.png" class="binuslogo" alt="Binus University Logo">
+            </a>
+            <h1>Rheynorich - 2702350724</h1>
+            <nav>
+                <ul id="navbar">
+                    <li><a class="active" href="My New Portfolio.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#education">Education</a></li> 
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <img src="Me.png" alt="Rheynorch" class="profile-picture">
+            <h2>About Me</h2>
+            <p>I'm a university student majoring in Computer Science. I have a passion for coding and have experience in Python, Java, HTML, CSS, and JavaScript.</p>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Mahatma Gading Intercultural School</h3>
+                <p>High School Diploma - Graduated in 2023</p>
+            </div>
+            <div class="education-item">
+                <h3>Binus International</h3>
+                <p>Bachelor's Degree in Computer Science - Graduating in 2027</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1 - Python</h3>
+                <p>I developed a simple game using Python to showcase my programming skills.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <ul class="contact-links">
+                <li><a href="https://www.instagram.com/rhey.k_/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="https://github.com/DuckConsumer12" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+                <li><a href="mailto:rheynorichkalistone@gmail.com" target="_blank"><i class="far fa-envelope"></i> Gmail</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Rheynorich. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
